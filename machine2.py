@@ -18,7 +18,6 @@ class ChatAgent(Agent):
     def on_start(self):
         super().on_start()
         display_message(self.aid.localname, 'Chat agent start...')
-        self.send_message()
 
     def send_message(self):
         message = ACLMessage(ACLMessage.INFORM)
