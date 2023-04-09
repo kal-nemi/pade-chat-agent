@@ -34,8 +34,8 @@ class ChatAgent(Agent):
 
 if __name__ == '__main__':
     agents = list()
-    receiver_aid = AID(name='agent1@localhost:{}'.format(30000))
-    chat_agent = ChatAgent(AID(name='agent2@localhost:{}'.format(30001)), receiver_aid)
+    receiver_aid = AID(name='agent1@192.168.32.129:{}'.format(30000))
+    chat_agent = ChatAgent(AID(name='agent2@192.168.32.11:{}'.format(30001)), receiver_aid)
     agents.append(chat_agent)
 
     start_loop(agents)
